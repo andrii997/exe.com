@@ -424,3 +424,30 @@ li .box_menu a:hover {
   text-decoration: none;
   transition: @transition;
 }
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next, .carousel-control .icon-prev {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    font-size: 25px;
+    background: @red;
+    border-radius: 3px;
+    padding-top: 7px;
+    transition: @transition;
+    opacity: .5;
+  }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control:focus, .carousel-control:hover {
+  .glyphicon-chevron-left,
+  .glyphicon-chevron-right {
+    background: @bg_gr;
+  }
+}
