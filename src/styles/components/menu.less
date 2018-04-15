@@ -76,15 +76,11 @@ html, body {
   transition: @transition;
 }
 
-.top-bar .tools li a:hover,
-.top-bar .tools li a:link,
-.top-bar .tools li a:active {
+.top-bar .tools li a:hover {
   color: #8DC63F;
 }
 
-.tools .wishlist_item a:hover,
-.tools .wishlist_item a:link,
-.tools .wishlist_item a:active {
+.tools .wishlist_item a:hover {
   .fa {
     color: @red
   }
@@ -98,9 +94,7 @@ html, body {
   transition: @transition;
 }
 
-.social_right .fa:hover,
-.social_right .fa:link,
-.social_right .fa:active {
+.social_right .fa:hover {
   color: @red
 }
 
@@ -241,8 +235,7 @@ html, body {
   transition: @transition;
 }
 
-.cart-heart .fa:hover,
-.cart-heart .fa:link {
+.cart-heart .fa:hover {
   color: @red;
   transform: scale(1.2,1.2);
 }
@@ -257,8 +250,7 @@ html, body {
   transition: @transition;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:link {
+.navbar-inverse .navbar-nav > li > a:hover {
   color: @red
 }
 
@@ -299,155 +291,22 @@ li .box_menu a:hover {
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
   color: @red
 }
-/*CROUSELE START///////////////////////////*/
 
-.carousel-caption {
-  position: absolute;
-  right: 20%;
-  bottom: 35px;
-  width: 60%;
-  left: 20%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-
-@media screen and (min-width:768px) {
-  .carousel-caption h3{font-size: 52px;}
-  .carousel-caption p{font-size: 32px;}
-  .carousel-caption{padding-bottom:160px;}
-}
-
-@media screen and (max-width:1200px) {
-  .home_menu {padding-left: 120px;}
-  .nav > li > a {
-    padding: 45px 15px;
-    font-size: @fz12;
-  }
-}
-
-@media screen and (max-width:1024px) {
-  .home_menu {padding-left: 90px;}
-  .nav > li > a {
-    padding: 45px 8px;
-    font-size: @fz12;
-  }
-  .top-bar .tools li a {
-    padding-left: 30px;
-  }
-  .menu_right {
-    text-align: center;
-  }
-  .menu_left {
-    text-align: center;
-  }
-}
-@media screen and (max-width:767px) {
-  .home_menu {padding-left: 0;}
-  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border: none;
-  }
-
-  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-    color: @red;
-    text-align: center;
-  }
-
-  .top-bar .tools li a {
-    padding-left: 20px;
-  }
-  .social_right {
-    padding-left: 20px;
-  }
-  .nav > li > a {
-    padding: 5px 10px;
-    text-align: center;
-  }
-}
-
-.carousel-inner>.item>a>img, .carousel-inner>.item>img {
-  margin: 0 auto;
-}
-
-.carousel-caption {
-  font-family: @Raleway;
-  font-weight: 800;
-  font-size: 42px;
-  text-align: center;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(28, 28, 28, 0.4);
   color: @white;
-}
-
-.carousel-caption span {
-  font-family: @Raleway;
-  font-weight: 800;
-  font-size: 32px;
-}
-
-.carousel-caption .caurosel_tetx {
-  font-size: 16px;
-}
-
-.button_ {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  color: @white;
-  font-size: 14px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.button_buy_now {
-  background: @bg_gr;
-  border-color: transparent;
+  cursor: pointer;
+  padding: 14px 16px;
+  border-radius: 3px;
   transition: @transition;
-}
-
-.button_screen {
-  background: transparent;
-  border: 2px solid @white;
-  transition: @transition;
-}
-
-.button_buy_now:hover {
-  background: transparent;
-  border: 2px solid @white;
-  text-decoration: none;
-  transition: @transition;
-}
-
-.button_screen:hover {
-  background: @bg_gr;
-  border: 2px solid transparent;
-  text-decoration: none;
-  transition: @transition;
-}
-
-@media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next, .carousel-control .icon-prev {
-    width: 40px;
-    height: 40px;
-    margin-top: -10px;
-    font-size: 25px;
-    background: @red;
-    border-radius: 3px;
-    padding-top: 7px;
-    transition: @transition;
-    opacity: .5;
-  }
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-}
-
-.carousel-control:focus, .carousel-control:hover {
-  .glyphicon-chevron-left,
-  .glyphicon-chevron-right {
-    background: @bg_gr;
+  &:hover {
+    background-color: @bg_gr;
   }
 }
