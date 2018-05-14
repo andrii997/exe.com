@@ -51,6 +51,7 @@ gulp.task("js:vendor", function () {
         "node_modules/jquery-validation/dist/jquery.validate.js",
         "node_modules/jquery-circle-progress/dist/circle-progress.js",
         "node_modules/slick-carousel/slick/slick.min.js",
+        "node_modules/jquery-waypoints/slick/waypoints.min.js",
         "src/js/**/*.js"
         ])
         .pipe(plugins.concat("vendor.min.js"))

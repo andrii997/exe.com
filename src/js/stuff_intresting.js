@@ -2,7 +2,9 @@
 $('#circle-1').circleProgress({
     value: 0.82,
     size: 125,
+    startAngle: 55,
     thickness: 5,
+    animation: {duration:3000},
     fill: {
         gradient: ["red", "yellow"]
     }
@@ -13,7 +15,9 @@ $('#circle-1').circleProgress({
 $('#circle-2').circleProgress({
     value: 0.38,
     size: 125,
+    startAngle: 55,
     thickness: 5,
+    animation: {duration:1500},
     fill: {
         gradient: ["red", "yellow"]
     }
@@ -24,7 +28,9 @@ $('#circle-2').circleProgress({
 $('#circle-3').circleProgress({
     value: 0.58,
     size: 125,
+    startAngle: 55,
     thickness: 5,
+    animation: {duration:2500},
     fill: {
         gradient: ["red", "yellow"]
     }
@@ -35,7 +41,9 @@ $('#circle-3').circleProgress({
 $('#circle-4').circleProgress({
     value: 0.25,
     size: 125,
+    startAngle: 55,
     thickness: 5,
+    animation: {duration:1000},
     fill: {
         gradient: ["red", "yellow"]
     }

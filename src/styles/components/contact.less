@@ -8,10 +8,10 @@
 .our_gettouch {
   padding-top: 120px;
   .zag_gettouch {
-    font-family: "Raleway", sans-serif;
+    font-family: @Raleway;
     font-weight: 400;
     font-size: 46px;
-    color: #FFFFFF;
+    color: @white;
   }
   .text_gettouch {
     font-size: 36px;
@@ -47,16 +47,16 @@
 }
 
 .par_info a:hover {
-  color: #E5493A;
+  color: @red;
 }
 
 .content_info:hover {
   .clean_info,
   .par_info:after {
-    background-color: #E5493A;
+    background-color: @red;
   }
   .zag_info {
-    color: #E5493A;
+    color: @red;
   }
 }
 
@@ -75,10 +75,10 @@
   margin-top: -155px;
   margin-left: -35px;
   border-radius: 50%;
-  background: #E5493A;
+  background: @red;
   & i {
     font-size: 28px;
-    color: #FFFFFF;
+    color: @white;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -87,13 +87,13 @@
   }
 }
 .zag_info {
-  font-family: "Raleway", sans-serif;
+  font-family: @Raleway;
   font-weight: 800;
   font-size: 22px;
   padding-top: 60px;
   margin: 0;
   text-align: center;
-  color: #FFFFFF;
+  color: @white;
 }
 
 .par_info {
@@ -104,7 +104,7 @@
   color: #959595;
   position: relative;
   &:after {
-    background: #363636;
+    background: @bg_gr;
     content: '';
     height: 2px;
     width: 70px;
@@ -118,10 +118,10 @@
   padding-top: 70px;
   padding-bottom: 20px;
   .zag_touchform {
-    font-family: "Raleway", sans-serif;
+    font-family: @Raleway;
     font-weight: 700;
     font-size: 26px;
-    color: #363636;
+    color: @bg_gr;
   }
   .text_touchform {
     font-family: "Roboto", sans-serif;
@@ -129,7 +129,7 @@
     color: #959595;
   }
   &:after {
-    background: #363636;
+    background: @bg_gr;
     content: '';
     height: 2px;
     width: 170px;
@@ -148,10 +148,10 @@
 }
 
 .filter-link {
-  font-family: "Raleway", sans-serif;
+  font-family: @Raleway;
   font-weight: 700;
   font-size: 14px;
-  display: inline-block;
+  display: @ib;
   padding: 15px 20px;
   color: #555555;
   transition: 1s;
@@ -160,12 +160,12 @@
 
 .filter-link:hover,
 .filter-link:active {
-  color: #E5493A;
-  border-bottom: 2px solid #E5493A;
+  color: @red;
+  border-bottom: 2px solid @red;
 }
 
 .img_portfolio {
-  display: inline-block;
+  display: @ib;
   max-width: 300px;
   height: 200px;
   margin: 0;
@@ -174,7 +174,7 @@
 }
 
 .sescr {
-  font-family: "Raleway", sans-serif;
+  font-family: @Raleway;
   font-weight: 500;
   font-size: 22px;
   position: absolute;
@@ -183,7 +183,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0, .6);
-  color: #FFFFFF;
+  color: @white;
   padding-top: 25px;
   padding-left: 25px;
   text-align: left;
@@ -191,11 +191,11 @@
   opacity: 0;
   transition: all 1s;
   .sescr_small {
-    font-size: 12px;
+    font-size: @fz12;
     color: #959595;
   }
   &:after {
-    background: #E5493A;
+    background: @red;
     content: '';
     height: 2px;
     width: 70px;
@@ -217,11 +217,11 @@
 }
 
 .button_works {
-  font-family: "Raleway", sans-serif;
+  font-family: @Raleway;
   font-weight: 800;
   border-radius: 5px;
-  color: #FFFFFF;
-  background: #363636;
+  color: @white;
+  background: @bg_gr;
   font-size: 14px;
   padding: 10px 20px;
   margin-top: 35px;
@@ -232,9 +232,9 @@
 }
 
 .button_works:hover {
-  background: #FFFFFF;
-  color: #363636;
-  border-color: #E5493A;
+  background: @white;
+  color: @bg_gr;
+  border-color: @red;
 }
 
 textarea.form-control.form_textarea {
@@ -242,9 +242,9 @@ textarea.form-control.form_textarea {
 }
 
 .best_solution {
-  font-family: "Raleway", sans-serif;
-  background-color: #E5493A;
-  color: #FFFFFF;
+  font-family: @Raleway;
+  background-color: @red;
+  color: @white;
 }
 .h3_solution {
   font-weight: 700;
@@ -270,6 +270,6 @@ textarea.form-control.form_textarea {
 }
 
 .btn_solution:hover {
-  border: 2px solid #FFFFFF;
-  background-color: #E5493A;
+  border: 2px solid @white;
+  background-color: @red;
 }
