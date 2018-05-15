@@ -89,9 +89,10 @@ gulp.task("watch", ["build"], function () {
     gulp.watch("dist/*.html").on("change", sync.reload);
 
     gulp.watch("src/styles/**/*.css", ["css"]);
+    gulp.watch("dist/css/*.css").on("change", sync.reload);
+
     gulp.watch("src/js/**/*.js", ["js"]);
-        gulp.watch("dist/js/*.js")
-        .on("change", sync.reload);
+        gulp.watch("dist/js/*.js").on("change", sync.reload);
 });
 
 gulp.task("default", ["watch"]);
