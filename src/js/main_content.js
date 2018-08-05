@@ -46,7 +46,6 @@ $('.slider').slick({
     ]
 });
 
-
 $('.sl').slick({
     speed: 700,
     slidesToShow: 5,

@@ -13,10 +13,14 @@
   background-color: #FAFAFA;
 }
 
+.bg_block__white {
+  background-color: #FFFFFF;
+}
+
 .about_creative__option {
   padding-top: 60px;
   .about_creative__zag {
-    font-family: "Raleway", sans-serif;
+    font-family: @Raleway;
     font-weight: 800;
     font-size: 26px;
     color: @bg_gr;
@@ -58,22 +62,22 @@
     }
   }
   .about_creative__button {
-    font-family: "Raleway", sans-serif;
+    font-family: @Raleway;
     font-weight: 800;
     border-radius: 5px;
-    color: #FFFFFF;
-    background: #363636;
+    color: @white;
+    background: @bg_gr;
     font-size: 14px;
     padding: 10px 20px;
     margin-top: 15px;
     margin-bottom: 60px;
     border-color: transparent;
-    transition: .8s;
+    transition: @transition;
     text-decoration: none;
     &:hover {
-      background: #FFFFFF;
-      color: #363636;
-      border-color: #E5493A;
+      background: @white;
+      color: @bg_gr;
+      border-color: @red;
       border-radius: 5px;
     }
   }
@@ -83,7 +87,7 @@
   padding: 70px 0;
   color: #636363;
   .about_creative__title {
-    font-family: "Raleway", sans-serif;
+    font-family: @Raleway;
     font-weight: 800;
     text-align: left;
     color: @bg_gr;
@@ -115,7 +119,7 @@
   }
   i {
     margin-right: 15px;
-    color: #8DC63F;
+    color: @green;
   }
 }
 
@@ -126,10 +130,10 @@
 .chose_us {
   padding-top: 70px;
   .blog_choose {
-    font-family: "Raleway", sans-serif;
+    font-family: @Raleway;
     font-weight: 700;
     font-size: 26px;
-    color: #363636;
+    color: @bg_gr;
   }
   .choose_text {
     font-family: "Roboto", sans-serif;
@@ -137,7 +141,7 @@
     color: #959595;
   }
   &:after {
-    background: #363636;
+    background: @bg_gr;
     content: '';
     height: 2px;
     width: 170px;
@@ -154,6 +158,11 @@
   border-color: #EEEEEE;
 }
 
+.panel-group .panel:hover,
+.panel-group .panel:active {
+  border-radius: 5px;
+}
+
 .panel-default > .panel-heading {
   padding: 0;
   border-radius: 0;
@@ -168,7 +177,7 @@
 }
 
 .header_accordeon {
-  font-family: "Raleway", sans-serif;
+  font-family: @Raleway;
   font-weight: 700;
   font-size: 16px;
   color: #898989;
@@ -184,7 +193,7 @@
 
 .more-less {
   float: right;
-  color: #FFFFFF;
+  color: @white;
   font-size: 14px;
   transition: 1.4s;
 }
@@ -199,13 +208,58 @@
 
 .panel-title:hover,
 .panel-title:active {
-  background-color: #363636;
+  background-color: @bg_gr;
   .header_accordeon {
-    color: #FFFFFF;
+    color: @white;
   }
   .more-less {
-    color: #E5493A;
+    color: @red;
   }
+}
+
+.myProgress_h5 {
+  font-family: @Raleway;
+  font-weight: 700;
+  color: #363636;
+}
+
+.myProgress {
+  position: relative;
+  height: 16px;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+}
+
+.myProgress_myBar {
+  border-radius: 5px;
+  position: absolute;
+  margin: 3px 0;
+  width: 95%;
+  height: 10px;
+  background-color: @red;
+}
+
+.myProgress_label {
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  padding: 2px 3px;
+  top: -30px;
+  left: 95%;
+  color: @white;
+  background: @red;
+  border-radius: 3px;
+}
+
+.myProgress_label:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 3px solid;
+  border-top-color: @red;
+  top: 100%;
+  left: 50%;
+  margin-left: -3px; /* adjust for border width */
 }
 
 
@@ -228,7 +282,7 @@
 
 .name_dev {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: @white;
   height: 100px;
   width: 360px;
   margin: 0 auto;
@@ -240,8 +294,8 @@
     padding: 0;
     margin: 0;
     padding-top: 30px;
-    color: #363636;
-    transition: .8s;
+    color: @bg_gr;
+    transition: @transition;
   }
   &:after {
     content: '';
@@ -249,7 +303,7 @@
     width: 0;
     height: 0;
     border: 15px solid;
-    border-bottom-color: #FFFFFF;
+    border-bottom-color: @white;
     bottom: 100%;
     left: 50%;
     margin-left: -15px; /* adjust for border width */
@@ -264,14 +318,14 @@
   margin: 0;
   color: #cccccc;
   &:after {
-    background: #363636;
+    background: @bg_gr;
     content: '';
     height: 2px;
     width: 70px;
     display: block;
     margin: 0 auto;
     margin-top: 30px;
-    transition: .8s;
+    transition: @transition;
   }
 }
 
@@ -287,15 +341,15 @@
   padding-top: 105px;
   background: rgba(0,0,0,.5);
   opacity: 0;
-  transition: all .8s;
+  transition: @transition;
   transform: scale(0);
   a {
     color: #898989;
     padding: 3px;
     text-decoration: none;
-    transition: all .8s;
+    transition: @transition;
     &:hover {
-      color: #E5493A;
+      color: @red;
     }
   }
   i {
@@ -309,10 +363,10 @@
     transform: scale(1);
   }
   .descr_dev:after {
-    background: #E5493A;
+    background: @red;
   }
   h4 {
-    color: #E5493A;
+    color: @red;
   }
 }
 
@@ -323,9 +377,60 @@
 }
 
 .nam_liber__color {
-  color: #E5493A;
+  color: @red;
 }
 
 .nam_liber__strong {
   font-weight: 800;
 }
+
+
+/////////////************* slider ***********//////////////////
+
+
+.about_sl {
+  max-width: 1085px;
+  margin: 60px auto;
+}
+
+.about_sl_slide:focus {
+  outline: none;
+}
+
+.about_sl_img {
+  display: block;
+  margin: 0 auto;
+  filter: invert(100%);
+}
+////////********** SLIDER **********/////////
+
+.slider_about_mini {
+  padding-top: 50px;
+}
+
+.sl_about_mini:focus {
+  outline: none;
+}
+
+.about_mini {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.about_mini__name {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 20px;
+  .about_mini__company {
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+
+/////////////********************////////////
+.best_solution__green {
+  background-color: @green;
+}
+
