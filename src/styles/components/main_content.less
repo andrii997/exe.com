@@ -1,30 +1,5 @@
 //************************* accardion ******************************//
 
-.chose_us {
-  padding-top: 70px;
-  .blog_choose {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    color: #363636;
-  }
-  .choose_text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #959595;
-  }
-  &:after {
-    background: #363636;
-    content: '';
-    height: 2px;
-    width: 170px;
-    display: block;
-    margin: 30px  auto;
-  }
-}
-
-
-
 .panel-group .panel {
   border-radius: 5px;
   box-shadow: none;
@@ -59,7 +34,7 @@
 
 .panel-title > a {
   display: block;
-  padding: 12px;
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -81,12 +56,13 @@
 
 .panel-title:hover,
 .panel-title:active {
-  background-color: #363636;
+  background-color: @bg_gr;
+  border-radius: 5px;
   .header_accordeon {
-    color: #FFFFFF;
+    color: @white;
   }
   .more-less {
-    color: #E5493A;
+    color: @red;
   }
 }
 
@@ -181,29 +157,6 @@
 .latest_blog {
   background-color: #fff;
 }
-.option_blog {
-  padding-top: 70px;
-  .blog_zag {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    color: #363636;
-  }
-  .blog_text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #959595;
-  }
-  &:after {
-    background: #363636;
-    content: '';
-    height: 2px;
-    width: 170px;
-    display: block;
-    margin: 30px  auto;
-  }
-}
-
 
 .list_posts {
   font-family: "Roboto", sans-serif;
@@ -303,30 +256,9 @@
 .theme_img {
   width: 100%;
 }
-.option_theme {
-  margin-top: 70px;
-  .theme_zag {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    color: #363636;
-  }
-  .theme_text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #959595;
-  }
-  &:after {
-    background: #363636;
-    content: '';
-    height: 2px;
-    width: 170px;
-    display: block;
-    margin: 30px  auto;
-  }
-}
 
 //***********************************************//
+
 .main_slide {
   background: url("/img/slider_bg.png");
   background-color: #E5493A;
